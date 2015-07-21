@@ -40,16 +40,12 @@ camX = camY = 0
 
 zoom = 0
 
-scale = 32
+scale = 128
 
 
 wood_floor = pygame.image.load("wood_floor.png")
 wood_floor = pygame.transform.rotate(wood_floor, 45)
-wood_floor = pygame.transform.smoothscale(wood_floor, (int(scale), int(scale * 0.5)))
-
-grass_floor = pygame.image.load("grass_floor.png")
-grass_floor = pygame.transform.rotate(grass_floor, 45)
-grass_floor = pygame.transform.smoothscale(grass_floor, (int(scale), int(scale * 0.5)))
+wood_floor = pygame.transform.smoothscale(wood_floor, (int(scale) + 1, int(scale * 0.5 + 1)))
 
 def render():
 
